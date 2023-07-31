@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center"><span style="color:#e18335">Rotom</span><span style="color:#03b1e4">Labs</span> User Survey</h1>
+        <p id="description" class="description text-center">
+          Note: RotomLabs was previously known as Shiny Hunter Club, and all of the content on the ShinyHunter.club website will be transferring to the new website over time.
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your Discord username"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>How often do you use <span style="color:#e18335">Rotom</span><span style="color:#03b1e4">Labs</span>?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select general usage</option>
+            <option value="multiple-times-a-day">Multiple Times a Day</option>
+            <option value="once-a-day">Once a Day</option>
+            <option value="multiple-times-a-week">Multiple Times a Week</option>
+            <option value="once-a-week">Once a Week</option>
+            <option value="less-than-once-a-week">&#60 Once a Week</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Would you recommend <span style="color:#e18335">Rotom</span><span style="color:#03b1e4">Labs</span> to a friend?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />Definitely</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Maybe</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Not sure</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>What is your favorite feature of <span style="color:#e18335">Rotom</span><span style="color:#03b1e4">Labs</span>?</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="news-and-guides">News and Guides</option>
+            <option value="catch-calculator">Catch Calculator</option>
+            <option value="pokedex">Pok&eacutedex</option>
+            <option value="giveaways">Giveaways</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What would you like to see improved?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="community-shiny-hunts"
+              type="checkbox"
+              class="input-checkbox"
+            />Community Shiny Hunts</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="guides-and-news-updates"
+              type="checkbox"
+              class="input-checkbox"
+            />Guides and News Updates</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="pokedex"
+              type="checkbox"
+              class="input-checkbox"
+            />Pok&eacutedex</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="discord-roles"
+              type="checkbox"
+              class="input-checkbox"
+            />Discord Roles</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="pokemon-go-infographics"
+              type="checkbox"
+              class="input-checkbox"
+            />Pok&eacutemon Go Infographics</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="shiny-raid-hosting"
+              type="checkbox"
+              class="input-checkbox"
+            />Shiny Raid Hosting</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="giveaways"
+              type="checkbox"
+              class="input-checkbox"
+            />Giveaways</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="in-game-tournaments"
+              type="checkbox"
+              class="input-checkbox"
+            />In-game Tournaments</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="automation-sources"
+              type="checkbox"
+              class="input-checkbox"
+            />Automation Sources</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
